@@ -36,8 +36,9 @@ const HeroSection = () => {
   }, [inView]);
 
   return (
-    <section ref={ref} className="relative bg-black h-[75vh] md:h-[85vh]">
+    <section ref={ref} className="relative h-[75vh] md:h-[85vh]">
       <BackgroundVideo />
+      <div className="absolute inset-0 z-50 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
 
       <div className="absolute inset-0 z-50 container mx-auto flex flex-col lg:flex-row lg:items-stretch py-28 md:py-0 px-4">
         <div className="flex items-center min-h-[55vh] w-full md:w-[45%] ">
